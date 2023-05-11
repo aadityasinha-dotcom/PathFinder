@@ -1,0 +1,35 @@
+/* Gypsy Branding */
+:root {
+  --background: #ceedf5;
+  --text: #020202;
+  --orange: #ec6433;
+}
+
+body {
+  color: var(--text);
+  background-color: white;
+}
+
+/* Utiltiy Styles */
+.bold {
+  font-weight: bold;
+}
+
+.cl-blue {
+  color: #3182ce;
+}
+
+.padding-vertical {
+  padding: 1em 0;
+}
+
+#logo {
+  display: none;
+}
+
+/*  */
+canvas {
+  min-height: 80vh;
+  width: 100vw;
+  background-color: rgb(5, 38, 71);
+}
