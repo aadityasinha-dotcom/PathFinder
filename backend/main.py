@@ -22,6 +22,11 @@ OVERPASS_URL = "http://overpass-api.de/api/interpreter"
 app = FastAPI()
 client = boto3.client('location', region_name='ap-south-1')
 
+
+"""
+Enabled cors for frontend integeration
+"""
+
 origins = ["*"]
 
 app.add_middleware(
