@@ -38,7 +38,6 @@ app.add_middleware(
 )
 
 
-
 def coord_to_id(coord):
     overpass_query = f"""
     [out:json];
@@ -77,7 +76,6 @@ async def search(text: str, maxResults: int=5):
     # uncomment for using openstreetmaps api
     # response = requests.get(f"https://nominatim.openstreetmap.org/search.php?q={text}&format=jsonv2&limit={maxResults}")
     # return json.loads(response.content)
-
 
 @app.post("/api/getRoute/")
 async def getRoute(route: RouteRequest):
