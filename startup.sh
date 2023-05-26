@@ -6,11 +6,18 @@ export MAIN_FILE="backend.main"
 # Check if venv folder exists
 if [ ! -d $VENV_FOLDER ]; then
     echo "Virtual environment not found. Creating virtual environment..."
+
     python3 -m venv $VENV_FOLDER
+
     source $VENV_FOLDER/bin/activate
+
+    # installing requirements
+
     pip3 install -r requirements.txt
+
 else
     echo "Virtual environment found. Activating virtual environment..."
+
     source $VENV_FOLDER/bin/activate
 fi
 
